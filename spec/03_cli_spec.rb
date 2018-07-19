@@ -23,7 +23,7 @@ describe '../bin/move executing a CLI Application' do
   it 'asks the user for input' do
     allow($stdout).to receive(:puts)
 
-    expect(self).to receive(:gets).and_return("1"), "Make sure `bin/move` is calling `gets` at some point for user input."
+    expect(self).to receive(:gets).and_return("2"), "Make sure `bin/move` is calling `gets` at some point for user input."
 
     run_file("./bin/move")
   end
